@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../src/bootstrap/bootstrap.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../src/login.css" type="text/css">
+
+    <title>Formulario Login y Registro de Usuarios</title>
+</head>
+<body>
+
+   <!-- Formularios -->
+    <div class="contenedor-formularios">
+        <!-- Links de los formularios -->
+        <ul role="tablist" class="nav justify-content-center nav-tabs">
+  			<li class="nav-item">
+    			<a class="nav-link active" data-toggle="tab" href="#iniciar-sesion">Iniciá sesión</a>
+  			</li>
+  			<li class="nav-item">
+    			<a class="nav-link" data-toggle="tab" href="#registrarse">Registrate</a>
+  			</li>
+  		</ul>
+
+        <!-- Contenido de los Formularios -->
+        <div class="contenido-tab tab-content text-center mx-auto h-100 w-75 mt-3">
+            <!-- Iniciar Sesion -->
+            <div id="iniciar-sesion" class="tab-pane fade show active" role="tabpanel">
+                <h1>Iniciar Sesión</h1>
+                <form action="#" method="post" onsubmit="validate()">
+                    <div class="form-group row row-cols-2 mx-auto w-50">
+                        <label for="usuario" class="col-3 col-form-label">
+                         	Usuario:
+                        </label>
+                        <div>
+                        	<input id="usuario" class="form-control" autocomplete="off" type="text" placeholder="Ingresa tu usuario">
+                        </div>            
+                    </div>
+
+                    <div class="form-group row row-cols-2 mx-auto w-50">
+                        <label for="pass" class="col-sm-3 col-form-label">
+                            Contraseña:
+                        </label>
+                        <div>
+                        	<input id="pass" class="form-control" autocomplete="off" type="password" placeholder="Ingresa tu contraseña">
+                        </div>
+                    </div>
+                    <p class="forgot"><a href="#">Se te olvidó la contraseña?</a></p>
+                    <input id="submit" type="submit" class="button button-block" value="Iniciar Sesión">
+                </form>
+            </div>
+
+             <!-- Registrarse -->
+            <div id="registrarse" class="tab-pane fade" role="tabpanel">
+                <h1>Registrarse</h1>
+                <form action="#" method="post">
+                    <div class="fila-arriba">
+                        <div class="contenedor-input">
+                            <label>
+                                Nombre <span class="req">*</span>
+                            </label>
+                            <input type="text" required >
+                        </div>
+
+                        <div class="contenedor-input">
+                            <label>
+                                Apellido <span class="req">*</span>
+                            </label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            Usuario <span class="req">*</span>
+                        </label>
+                        <input type="text" required>
+                    </div>
+                    <div class="contenedor-input">
+                            <label>
+                                Email <span class="req">*</span>
+                            </label>
+                        <input type="email" required>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            Contraseña <span class="req">*</span>
+                        </label>
+                        <input type="password" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <label>
+                            Repetir Contraseña <span class="req">*</span>
+                        </label>
+                        <input type="password" required>
+                    </div>
+
+                    <input type="submit" class="button button-block" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+   <script type="text/javascript" src="../src/jquery.js"></script>
+   <script type="text/javascript" src="../src/bootstrap/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../src/login.js"></script>
+
+</body>
+</html>
