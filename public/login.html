@@ -33,13 +33,13 @@
             <!-- Iniciar Sesion -->
             <div id="iniciar-sesion" class="tab-pane fade show active" role="tabpanel">
                 <h1>Iniciar Sesión</h1>
-                <form action="#" method="post" onsubmit="validate()">
+                <form action="../src/login.php" method="post" onsubmit="validate()">
                     <div class="form-group row row-cols-2 mx-auto w-50">
                         <label for="usuario" class="col-3 col-form-label">
                          	Usuario:
                         </label>
                         <div>
-                        	<input id="usuario" class="form-control" autocomplete="off" type="text" placeholder="Ingresa tu usuario">
+                        	<input id="usuario" class="form-control" autocomplete="off" type="text" placeholder="Ingresa tu usuario" name="usuario">
                         </div>            
                     </div>
 
@@ -48,7 +48,7 @@
                             Contraseña:
                         </label>
                         <div>
-                        	<input id="pass" class="form-control" autocomplete="off" type="password" placeholder="Ingresa tu contraseña">
+                        	<input id="pass" class="form-control" autocomplete="off" type="password" placeholder="Ingresa tu contraseña" name="pass">
                         </div>
                     </div>
                     <p class="forgot"><a href="#">Se te olvidó la contraseña?</a></p>
@@ -57,7 +57,7 @@
             </div>
 
              <!-- Registrarse -->
-            <div id="registrarse" class="tab-pane fade" role="tabpanel">
+            <div  id="registrarse" class="tab-pane fade" role="tabpanel">
                 <h1>Registrarse</h1>
                 <form action="#" method="post">
                     <div class="fila-arriba">
