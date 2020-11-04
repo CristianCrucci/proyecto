@@ -1,0 +1,10 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#submit, #registrarse {
+	border-radius: 4rem;
+}
+
+
